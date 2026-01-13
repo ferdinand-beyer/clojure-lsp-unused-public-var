@@ -1,0 +1,9 @@
+{:paths ["src"]
+ :aliases
+ {:latest {:deps {com.github.clojure-lsp/clojure-lsp {:mvn/version "2025.11.28-12.47.43"}
+                  org.clj-commons/pretty {:mvn/version "3.6.5"}}
+           :ns-default lsp}
+
+  :prev {:deps {com.github.clojure-lsp/clojure-lsp {:mvn/version "2025.08.25-14.21.46"}
+                org.clj-commons/pretty {:mvn/version "3.6.5"}}
+         :ns-default lsp}}}
