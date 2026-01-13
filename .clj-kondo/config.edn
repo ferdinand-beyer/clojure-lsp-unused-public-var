@@ -1,2 +1,5 @@
 {:linters {:clojure-lsp/unused-public-var {:level :warning
-                                           :exclude-when-contains-meta #{:unused/kondo}}}}
+                                           :exclude-when-contains-meta #{:unused/kondo}}}
+
+ :ns-groups [{:pattern "e*" :name example}]
+ :config-in-ns {example {:linters {:discouraged-var {clojure.core/tap> {:message "Please remember to remove the tap> call"}}}}}}
